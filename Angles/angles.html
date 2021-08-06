@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb676f87ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./angles.css">
+    <title>Triangle | App</title>
+</head>
+
+<body style="background-color: blanchedalmond;">
+    <div class="container">
+        <div class="main-container">
+            <button class="goBack" onclick="location.href='../index.html';">
+                << Go back</button>
+                    <div class="form-element">
+                        <div class="text-tag">
+                            <h1>Enter the angles in below input boxes we will tell you if those
+                                angles make a Triangle</h1>
+                        </div>
+                        <form action="" id="anglesForm" method="get">
+
+                            <input id="angle-one" type="number" placeholder=" First " required> -
+                            <input id="angle-two" type="number" placeholder=" Second " required> -
+                            <input id="angle-three" type="number" placeholder=" Thrird " required>
+                        </form>
+                        <button id="btn" onclick="getValues()">Calculate</button>
+                        <div class="output">
+                        </div>
+                    </div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-icon">
+                <div class="footer-icon1"> <i class="fab fa-github fa-2x"></i></div>
+                <div class="footer-icon2"><i class="fab fa-linkedin fa-2x"></i></div>
+                <div class="footer-icon3"><i class="fab fa-twitter fa-2x"></i></div>
+            </div>
+            <!-- <div> -->
+            <!-- <p>👉 Connect 👈</p> -->
+            <!-- </div> -->
+
+        </div>
+    </div>
+    <script src="./angles.js"></script>
+</body>
+
+</html>

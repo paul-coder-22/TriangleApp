@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area</title>
+</head>
+
+<body>
+    <!-- select checkbox to show related forms -->
+    <div class="container" id="area_select">
+        <form action="" class="formVal">
+            <div>
+                <label for="calArea1">
+                    <input type="radio" name="select" id="calArea1" required>
+                    If you have base and height length
+                </label>
+            </div>
+            <div>
+                <label for="calArea2">
+                    <input type="radio" name="select" id="calArea2" required>
+                    If you have length of 3 sides
+                </label>
+            </div>
+            <div>
+                <label for="calArea3">
+                    <input type="radio" name="select" id="calArea3" required>
+                    If you have base and height length
+                </label>
+            </div>
+        </form>
+    </div>
+
+    <br><br><br>
+    <!-- form one  -->
+    <div class="container">
+        <div id="firstForm">
+            <form action="" class="forms">
+                <div>
+                    <label for="firstFormBase">
+                        <input type="number" id="firstFormBase" required>
+                        If you have base and height length
+                    </label>
+                </div>
+                <div>
+                    <label for="secondFormHeight">
+                        <input type="number" id="firstFormHeight" required>
+                        If you have length of 3 sides
+                    </label>
+                </div>
+                <button type="submit" id="btn1">CLick</button>
+            </form>
+            <h2>Area will be calculated here-</h2>
+            <!-- <div class="outputHere"> -->
+            <label class="label">Area=</label>
+            <div style="display:inline;" class="areaShowHere">1/2*base*height</div>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <br><br><br>
+    <!-- second Form -->
+
+    <div class="container">
+        <div id="secondForm">
+            <form action="" class="forms">
+                <div>
+
+                    <label for="secondFormfirstSide">
+                        b
+                        <input type="number" id="secondFormfirstSide" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="secondFormSecondSide">
+                        a
+                        <input type="number" id="secondFormSecondSide" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="secondFormThirdSide">
+                        c
+                        <input type="number" id="secondFormThirdSide" required>
+                    </label>
+                </div>
+                <button type="submit" id="btn2">CLick</button>
+
+            </form>
+            <h2>Area will be calculated here-</h2>
+            <!-- <div class="outputHere"> -->
+            <label class="label">Area=</label>
+            <div style="display:inline;" class="areaShowHere"><span style="font-size: 1.8rem;">√</span><span
+                    style="border-top:2px solid black; padding-top:0.1rem;">s(s-a)(s-b)(s-c)</span></div>
+            <!-- </div> -->
+
+        </div>
+    </div>
+
+    <br><br><br>
+
+
+    <!-- third Form -->
+    <div class="container">
+        <div id="thirdForm">
+            <form action="" class="forms">
+                <div>
+                    <label for="thirdFormBase">
+                        b
+                        <input required type="number" id="thirdFormBase" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="thirdFormHypotenous">
+                        c
+                        <input required type="number" id="thirdFormHypotenous" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="thirdFormAngle"> A degree
+                        <input type="number" id="thirdFormAngle" required>
+                    </label>
+                </div>
+                <button type="submit" id="btn3">CLick</button>
+            </form>
+
+            <h2>Area will be calculated here-</h2>
+            <!-- <div class="outputHere"> -->
+            <label class="label">Area=</label>
+            <div style="display:inline;" class="areaShowHere">1/2*b*c*sin(A)</div>
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="outputHere" style="border: 1px solid red; " height="50px" width="50px">
+
+    </div>
+    <script src="./area.js"></script>
+</body>
+
+</html>
