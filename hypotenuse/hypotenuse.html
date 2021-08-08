@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fb676f87ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./hypotenuse.css">
+    <title>Hypotenuse</title>
+</head>
+
+<body style="background-color: blanchedalmond;">
+
+    <div class="main-container">
+
+        <button class="back-button" onclick="location.href='../index.html';">
+            << Go back</button>
+
+                <div class="heading">
+                    <h1>Calculate Area </h1>
+                </div>
+                <div class="text-line">
+                    <p>Enter the lengths of sides of right angle triangle</p>
+                </div>
+
+                <div class="form-container">
+
+                    <form action="" id="formValue" class="forms">
+
+                        <div class="input-ele">
+                            <label for="base">
+                                Base =
+                                <input type="number" id="base" placeholder="Enter your Value">
+                            </label>
+                            <label for="height">
+                                Height =
+                                <input type="number" id="height" placeholder="Enter your Value">
+                            </label>
+                        </div>
+                        <!-- page refresh -->
+                        <button class="ele-button" id="btn" onclick="getValue()" type='button'>Click</button>
+
+                    </form>
+
+                    <h2>Hypotenuse will be calculated here-
+                        <!-- 👇  👉-->
+                    </h2>
+
+                    <label class="label">
+                        <h2 class="h2tag">👇</h2>
+                        <div id="resultView"> Output loading.... </div>
+                    </label>
+
+
+                    <div id="formula" class="areaShowHere">
+                        <h2 class="h2tag">Area = </h2> 1/2*base*height
+                    </div>
+                </div>
+    </div>
+
+
+    <!-- <div id="resultView" style="border: 1px solid red; width: 200px;height: 300px;"> -->
+
+    </div>
+    <script src="./hypotenuse.js"></script>
+</body>
+
+</html>
