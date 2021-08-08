@@ -8,16 +8,40 @@
     padding: 1rem;
 }
  */
-/*  *{
-    margin: 0;
-    padding: 0;
-} */
+html, body {
+    width: auto!important;
+    overflow-x: hidden!important
+ } 
 :root{
     --button:#000;
 }
+a{
+    color: var(--button);
+}
+
+/* form container */
+.form-container {
+    justify-content: center;
+    align-self: center;
+    margin: auto; 
+    display: flex;
+}
+
+/*Home button  */
+.goBack{
+    margin: 0 auto 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 1.5rem;
+    background: transparent;
+    border: 1px solid var(--button);
+}
+
+/* form width */
 .formdata{
     flex-basis: 50vw;
 }
+
+/*  result container */
 .scoreContainer{
     margin: 1rem auto 1rem;
     padding: 0.4rem 1rem;
@@ -27,17 +51,18 @@
 }
 
 /* footer */
-.footer-container button{
+.footer-container {
     display: block;
 }
-.footer-icon{
+.footer-container .footer-icon{
     position: relative;
     /* bottom: 0; */
     display: flex;
     justify-content: center;
-    margin: 1.6rem;
+    /* margin: 1.6rem; */
 }
 
+/* select all the children of footer-icon */
 .footer-icon > *{
     margin: 0.4rem;
     padding: 0.5rem;
@@ -50,7 +75,7 @@
 .footer-icon > * :hover{
     transform: scale(1.2);
 }
-/*  */
+
 
  @media only screen and (max-width: 600px) {
    /*  .form-container{

@@ -83,3 +83,31 @@
 #formula{
     margin: 1rem;
 }
+a{
+    color: var(--button);
+}
+/* footer */
+.footer-container {
+    display: block;
+}
+.footer-container .footer-icon{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1.6rem;
+}
+
+/* select all the children of footer-icon */
+.footer-icon > *{
+    margin: 0.4rem;
+    padding: 0.5rem;
+    /* border: 2px solid var(--button); */
+    transition: 500ms;
+    animation-timing-function: linear;
+}
+
+/* Applying syles inside all the children in footer-icon class  */
+.footer-icon > * :hover{
+    transform: scale(1.2);
+}

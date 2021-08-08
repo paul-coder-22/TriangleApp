@@ -1,23 +1,34 @@
 *{
     padding: 0;
     margin: 0;
-}
+    font-family: 'Poppins', sans-serif;
 
+}
+:root{
+    --border:#000;
+    --background:blanchedalmond;
+    --form:#eee;
+}
+a{
+    color: var(--border);
+}
 .main-container{
     width: 70%;
-    background: #eee;
+    background: var(--form);
     text-align: center;
     position: relative;
     margin: 1rem auto;
 }
 
 .div1{
-    background-color: green;
+    background-color: var(--background);
     height: 100px;
     width: 100px;
     display: inline-block;
     margin: 10px;
     cursor: pointer;
+    border: 2px solid var(--border);
+    transition: transform .2s;
     
 }
 
@@ -26,4 +37,33 @@
     line-height: 6rem;
     font-weight: 800;
     
+}
+
+.div1:hover{
+    transform: scale(1.05);
+}
+
+.footer-container {
+    display: block;
+}
+.footer-container .footer-icon{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1.6rem;
+}
+
+/* select all the children of footer-icon */
+.footer-icon > *{
+    margin: 0.4rem;
+    padding: 0.5rem;
+    /* border: 2px solid var(--button); */
+    transition: 500ms;
+    animation-timing-function: linear;
+}
+
+/* Applying syles inside all the children in footer-icon class  */
+.footer-icon > * :hover{
+    transform: scale(1.2);
 }
