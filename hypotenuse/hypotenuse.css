@@ -65,6 +65,7 @@ a{
     border: 3px solid var(--button);
     padding: 0.5rem;
     margin: 1rem;
+    display: inline;
 }
 .label{
     padding: 1rem;

@@ -5,6 +5,9 @@
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
+a{
+    color: var(--border);
+}
 :root{
     --button : #000;
 }

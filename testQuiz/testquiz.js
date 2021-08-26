@@ -25,6 +25,6 @@ quizForm.addEventListener('submit', (e) => {
     }
     document.querySelector('#submitQuiz').style.display = "none";
     scoreDiv.style.display = "block";
-    scoreDiv.innerHTML = ` This is the final Output --->  ${score}`;
+    scoreDiv.innerHTML = ` <h4>Final Result  : ${score}</h4>`;
 })
 console.log(score)

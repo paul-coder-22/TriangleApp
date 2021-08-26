@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+a{
+    color: var(--border);
+}
 :root{
     --button : #000;
 }
@@ -75,10 +78,11 @@
 .outputHere{
     border: 3px solid var(--button);
     padding: 0.5rem;
-    margin: 1rem;
+    margin: 1rem 0.7rem;
 }
+
 .label{
-    padding: 1rem;
+    padding: 1rem 0.2rem;
 }
 #formula{
     margin: 1rem;
