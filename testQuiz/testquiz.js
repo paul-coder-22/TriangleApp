@@ -1,9 +1,11 @@
+
 const quizForm = document.forms[0];
 const quizDiv = document.querySelectorAll('.ow')
 const submitQuiz = document.getElementById("submitQuiz");
 const scoreDiv = document.querySelector('#outputHere')
-// , "option1", "option2", "option2", "option3", "option3", "option3"
-const correctAns = ["option1", "option2", "option1", "option1", "option1", "option2", "option2", "option3"];
+
+document.querySelectorAll('legend').forEach(ele => console.log(ele.innerText.replaceAll('#', String.fromCharCode(176))))
+const correctAns = ["option1", "option3", "option1", "option3", "option1", "option2", "option3", "option2"];
 let score = 0;
 scoreDiv.style.display = "none";
 quizForm.addEventListener('submit', (e) => {
@@ -13,10 +15,7 @@ quizForm.addEventListener('submit', (e) => {
     for (let entry of data) {
 
         if (entry[1] === correctAns[index]) {
-            // console.log(entry[0])
             document.getElementsByName(entry[0])[0].parentElement.parentElement.style.borderColor = "green";
-            // document.getElementsByName(entry[0])[0].disabled = true
-            // document.getElementById("myLI").parentElement.nodeName;
             score++;
         } else {
             document.getElementsByName(entry[0])[0].parentElement.parentElement.style.borderColor = "red";

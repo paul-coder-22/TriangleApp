@@ -10,7 +10,8 @@
  */
 html, body {
     width: auto!important;
-    overflow-x: hidden!important
+    overflow-x: hidden!important;
+    font-family: 'Poppins', sans-serif;
  } 
 :root{
     --button:#000;
